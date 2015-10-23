@@ -1,0 +1,216 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.feefo.com/feefo/xmlfeed.jsp?json=true&limit=9&logon=www.sealinktravelgroup.com.au/SeaLink%20KI&mode=both&vendorref=HTCC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.feefo.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache-Coyote/1.1
+      Set-Cookie:
+      - JSESSIONID=10F63ADD7A85057FBDC4BB55775D7018; Path=/
+      Cache-Control:
+      - max-age=3600
+      Content-Type:
+      - application/json;charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      Date:
+      - Fri, 23 Oct 2015 05:40:05 GMT
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {"FEEDBACKLIST": {
+            "FEEDBACK": [
+                {
+                    "COUNT": 1,
+                    "CUSTOMERCOMMENT": "Service rating : Generally quality service and great Guide, Steve, with vast experience and knowledge<br/>Product : Good but food could have been better",
+                    "DATE": "21-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D67127",
+                    "FEEDBACKID": 67127,
+                    "HREVIEWDATE": "2015-10-21T05:27:07",
+                    "HREVIEWRATING": 4,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "+",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=67127",
+                    "SERVICERATING": "+",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : Generally quality service and great Guide, Steve, with vast experience and knowledge<br/>Product : Good but food could have been better"
+                },
+                {
+                    "COUNT": 2,
+                    "CUSTOMERCOMMENT": "Service rating : It was a great trip!! I thought the 30 minutes we had at each stop was perfect. I just wish someone would've warned me about all the flies buzzing around everywhere! I would've put on some bug spray.<br/>Product : Our driver was very knowledgeable seeing as how he grew up on the island.",
+                    "DATE": "20-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D65246",
+                    "FEEDBACKID": 65246,
+                    "HREVIEWDATE": "2015-10-20T02:53:54",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=65246",
+                    "SERVICERATING": "++",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : It was a great trip!! I thought the 30 minutes we had at each stop was perfect. I just wish someone would've warned me about all the flies buzzing around everywhere! I would've put on some bug spray.<br/>Product : Our driver was very knowledgeable seeing as how he grew up on the isl..."
+                },
+                {
+                    "COUNT": 3,
+                    "CUSTOMERCOMMENT": "Service rating : I found the service on both boats to be excellent...very happy friendly people<br/>Product : I have been to KI as a parent on School Camp and the State Acrediated Information Centre Conference but never as a tourist under my own and loved exploring the Honey Farms, Wineries, Lavender Farms and Eucalptus Farm, next time I will revisit the Scenic Highlights",
+                    "DATE": "16-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D65306",
+                    "FEEDBACKID": 65306,
+                    "HREVIEWDATE": "2015-10-16T03:15:43",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=65306",
+                    "SERVICERATING": "++",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : I found the service on both boats to be excellent...very happy friendly people<br/>Product : I have been to KI as a parent on School Camp and the State Acrediated Information Centre Conference but never as a tourist under my own and loved exploring the Honey Farms, Wineries, Lavende..."
+                },
+                {
+                    "COUNT": 4,
+                    "CUSTOMERCOMMENT": "Service rating : The flight&amp; tour idea was perfect for taking the grankids. Their favourite spot was Remarkable rocks. We enjoyed the coach drivers information and he presented well.<br/>Product : Good overview of KI. We will return for a longer stay in the future.&#13;<br/>Booking staff was extremely helpful to our needs.",
+                    "DATE": "15-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D65201",
+                    "FEEDBACKID": 65201,
+                    "HREVIEWDATE": "2015-10-15T10:15:04",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=65201",
+                    "SERVICERATING": "++",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : The flight&amp; tour idea was perfect for taking the grankids. Their favourite spot was Remarkable rocks. We enjoyed the coach drivers information and he presented well.<br/>Product : Good overview of KI. We will return for a longer stay in the future.&#13;<br/>Booking staff was extremely h..."
+                },
+                {
+                    "COUNT": 5,
+                    "CUSTOMERCOMMENT": "Service rating : Everything was excellent except for the lunch.  Knowing that most of your tourists belong to varied backgrounds a little neutral lunch menu (burgers/noodles) should be organised. &#13;<br/>&#13;<br/>Rest absolutely loved every bit of it. Worth every penny. Initially I was skeptical as the amount is a bit on the higher side. But at the end of the day I have no complaints. &#13;<br/>&#13;<br/>A huge shout to Sea Link for making it one of my best memorable experience in last 6 months of stay in Australia (been to Sydney, Melbourne and most of places around adelaide).&#13;<br/>&#13;<br/>Keep up the good work. :-)&#13;<br/>&#13;<br/>Regards&#13;<br/>Soumen Das,  India<br/>Product : Beautiful is an understatement. I was missing the pristine blue sea water of Mediterranean (Europe). Had almost lost hope after Melbourne,  Sydney and Adelaide. But KI finally quenched that thirst. Loved it and was a photographer's delight. Seeing my pictures all my friends here (who earlier were skeptical) are planning to visit now. &#13;<br/>&#13;<br/>Cheers :-)",
+                    "DATE": "13-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D63785",
+                    "FEEDBACKID": 63785,
+                    "HREVIEWDATE": "2015-10-13T09:35:19",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=63785",
+                    "SERVICERATING": "+",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : Everything was excellent except for the lunch.  Knowing that most of your tourists belong to varied backgrounds a little neutral lunch menu (burgers/noodles) should be organised. &#13;<br/>&#13;<br/>Rest absolutely loved every bit of it. Worth every penny. Initially I was skeptical as the amount is..."
+                },
+                {
+                    "COUNT": 6,
+                    "CUSTOMERCOMMENT": "Service rating : PUNCTUAL TRANSFERS, WELL MAINTAINED COACH, VERY NICE SEA LINK VESSEL. GOOD COFFEE ONBOARD<br/>Product : COMFORTABLE COACH, OUR DRIVER DANIEL DID AN EXCELLENT COMMENTARY, KANGAROO ISLAND WAS AMAZING, FROM THE AUSTRALIAN SEA-LIONS TO THE NEW ZEALAND FUR SEALS, FROM THE KOALA WALK TO THE REMARKABLE ROCKS AND LIGHTHOUSE WOULD RECOMMEND A TRIP TO KANGAROO ISLAND, A MUST SEE. ON A FINAL NOTE OUR INCLUDED LUNCH WAS DELICIOUS. A VERY LONG DAY FROM 6AM TO 10.30PM BUT WOULD NOT CHANGE A THING.",
+                    "DATE": "11-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D63650",
+                    "FEEDBACKID": 63650,
+                    "HREVIEWDATE": "2015-10-11T02:42:21",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=63650",
+                    "SERVICERATING": "++",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : PUNCTUAL TRANSFERS, WELL MAINTAINED COACH, VERY NICE SEA LINK VESSEL. GOOD COFFEE ONBOARD<br/>Product : COMFORTABLE COACH, OUR DRIVER DANIEL DID AN EXCELLENT COMMENTARY, KANGAROO ISLAND WAS AMAZING, FROM THE AUSTRALIAN SEA-LIONS TO THE NEW ZEALAND FUR SEALS, FROM THE KOALA WALK TO T..."
+                },
+                {
+                    "COUNT": 7,
+                    "CUSTOMERCOMMENT": "Service rating : Was a pleasant trip.<br/>Product : Was an enjoyable day trip.",
+                    "DATE": "10-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D63761",
+                    "FEEDBACKID": 63761,
+                    "HREVIEWDATE": "2015-10-10T04:22:06",
+                    "HREVIEWRATING": 4,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "+",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=63761",
+                    "SERVICERATING": "+",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : Was a pleasant trip.<br/>Product : Was an enjoyable day trip."
+                },
+                {
+                    "COUNT": 8,
+                    "CUSTOMERCOMMENT": "Service rating : SeaLink could improve on the process to board buses back to hotels.  Something more efficient that asking bus drivers and having them direct you to the proper bus.  A long line forms and this delays departure of the buses.  Possibly lit signs?<br/>Product : SeaLink needs to provide a better process for getting individuals back on the bus during the various stops on the island.  Three young ladies delayed our departure by 30 minutes when they were tardy returning from Remarkable Rocks.  Possibly a chime of visual signal?",
+                    "DATE": "10-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D63791",
+                    "FEEDBACKID": 63791,
+                    "HREVIEWDATE": "2015-10-10T01:51:46",
+                    "HREVIEWRATING": 4,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "+",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=63791",
+                    "SERVICERATING": "+",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : SeaLink could improve on the process to board buses back to hotels.  Something more efficient that asking bus drivers and having them direct you to the proper bus.  A long line forms and this delays departure of the buses.  Possibly lit signs?<br/>Product : SeaLink needs to provide ..."
+                },
+                {
+                    "COUNT": 9,
+                    "CUSTOMERCOMMENT": "Service rating : SeaLink services were awesome. We totally enjoyed our day tour.<br/>Product : Seals were the best.",
+                    "DATE": "10-Oct-2015",
+                    "DESCRIPTION": "KI Experience",
+                    "FACEBOOKSHARELINK": "http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.feefo.com%2FAU%2Fen%2Freviews%2FSeaLink-Kangaroo-Island_Tours%2F%3Fid%3D987195%26servicefeedbackid%3D63629",
+                    "FEEDBACKID": 63629,
+                    "HREVIEWDATE": "2015-10-09T20:52:33",
+                    "HREVIEWRATING": 5,
+                    "LINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                    "PRODUCTCODE": "HTCC",
+                    "PRODUCTRATING": "++",
+                    "READMOREURL": "http://www.feefo.com/AU/en/reviews/SeaLink-Kangaroo-Island_Tours/?id=987195&servicefeedbackid=63629",
+                    "SERVICERATING": "++",
+                    "SHORTCUSTOMERCOMMENT": "Service rating : SeaLink services were awesome. We totally enjoyed our day tour.<br/>Product : Seals were the best."
+                }
+            ],
+            "SUMMARY": {
+                "AVERAGE": 97,
+                "BEST": 100,
+                "COUNT": 284,
+                "FEEDGENERATION": "Fri Oct 23 06:40:05 BST 2015",
+                "LIMIT": 9,
+                "MODE": "service",
+                "PRODUCTBAD": 3,
+                "PRODUCTEXCELLENT": 187,
+                "PRODUCTGOOD": 83,
+                "PRODUCTLINK": "http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/",
+                "PRODUCTPOOR": 11,
+                "SERVICEBAD": 3,
+                "SERVICEEXCELLENT": 199,
+                "SERVICEGOOD": 79,
+                "SERVICEPOOR": 7,
+                "START": 1,
+                "SUPPLIERLOGO": "http://www.feefo.com/feefo/getnonpublicfile.jsp?vendorimage=987195&vendorimageext=file.png",
+                "TITLE": "KI Experience",
+                "TOTALPRODUCTCOUNT": 284,
+                "TOTALRESPONSES": 527,
+                "TOTALSERVICECOUNT": 289,
+                "VENDORLOGON": "www.sealinktravelgroup.com.au/SeaLink KI",
+                "VENDORREF": "HTCC",
+                "WORST": 0
+            }
+        }}
+    http_version: 
+  recorded_at: Fri, 23 Oct 2015 05:40:05 GMT
+recorded_with: VCR 2.9.3
