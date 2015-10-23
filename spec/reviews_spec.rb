@@ -32,6 +32,9 @@ describe Feefo::Reviews do
       expect(review.product_rating).to eq '+'
       expect(review.review_date).to eq '2015-10-21T05:27:07'
       expect(review.review_rating).to eq 4
+      expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
+      expect(review.date).to eq '21-Oct-2015'
+      expect(review.data).to be_a(Hash)
     end
   end
 end

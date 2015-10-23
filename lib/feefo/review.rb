@@ -1,35 +1,45 @@
 module Feefo
   class Review
-    def initialize(review)
-      @review = review
+    attr_reader :data
+
+    def initialize(data)
+      @data = data
     end
 
     def customer_comment
-      @review['CUSTOMERCOMMENT']
+      data['CUSTOMERCOMMENT']
     end
 
     def review_date
-      @review['HREVIEWDATE']
+      data['HREVIEWDATE']
     end
 
     def service_rating
-      @review['SERVICERATING']
+      data['SERVICERATING']
     end
 
     def product_rating
-      @review['PRODUCTRATING']
+      data['PRODUCTRATING']
     end
 
     def vendor_comment
-      @review['VENDORCOMMENT']
+      data['VENDORCOMMENT']
     end
 
     def review_rating
-      @review['HREVIEWRATING']
+      data['HREVIEWRATING']
     end
 
     def description
-      @review['DESCRIPTION']
+      data['DESCRIPTION']
+    end
+
+    def link
+      data['LINK']
+    end
+
+    def date
+      data['DATE']
     end
   end
 end
