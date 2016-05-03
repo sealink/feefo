@@ -40,7 +40,7 @@ describe "Fetching a set of reviews" do
       context 'its first FEEDBACK element' do
         subject { feedback.first }
         it { should be_a(Hash) }
-        it { should include 'PRODUCTRATING' }
+        it { should include 'SERVICERATING' }
         # These guys are optional keys:
         # it { should include *%w(SERVICERATING CUSTOMERCOMMENT VENDORCOMMENT) }
       end

@@ -18,10 +18,6 @@ module Feefo
       data['SERVICERATING']
     end
 
-    def product_rating
-      data['PRODUCTRATING']
-    end
-
     def vendor_comment
       data['VENDORCOMMENT']
     end

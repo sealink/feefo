@@ -30,7 +30,6 @@ describe Feefo::Reviews do
       expect(review.vendor_comment).to be nil
       expect(review.description).to eq 'KI Experience'
       expect(review.service_rating).to eq '+'
-      expect(review.product_rating).to eq '+'
       expect(review.review_date).to eq '2015-10-21T05:27:07'
       expect(review.review_rating).to eq 4
       expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
