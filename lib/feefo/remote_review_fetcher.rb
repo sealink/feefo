@@ -9,7 +9,7 @@ module Feefo
 
     def fetch_reviews
       params = {
-        logon:     @config[:account],
+        logon:     logon,
         vendorref: @code,
         limit:     @config[:review_limit],
         json:      true,
@@ -24,6 +24,10 @@ module Feefo
 
 
     private
+
+    def logon
+      @config[:logon] + '/' + @config[:division]
+    end
 
     def url
       'http://www.feefo.com/feefo/xmlfeed.jsp'

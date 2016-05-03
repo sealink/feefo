@@ -12,16 +12,18 @@ module Feefo
   def self.config=(config)
     @config = {
       name: config['name'],
-      account: config['account'],
+      logon: config['logon'],
+      division: config['division'],
       time_to_cache_reviews: config['time_to_cache_reviews'],
       review_limit: config['review_limit']
     }
   end
 
   def self.review_base_url
-    name    = URI.encode(config.fetch(:name))
-    account = URI.encode(config.fetch(:account))
-    "http://www.feefo.com/reviews/#{name}/?logon=#{account}"
+    name = URI.encode(config.fetch(:name))
+    logon = URI.encode(config.fetch(:logon))
+    division = URI.encode(config.fetch(:division))
+    "http://www.feefo.com/reviews/#{name}/?logon=#{logon}/#{division}"
   end
 
   def self.review_for_code(code)

@@ -4,8 +4,9 @@ require 'feefo'
 describe 'Feefo' do
   before do
     Feefo.config = {
-      'account' => 'www.link.com/My Brand',
-      'name'    => 'My Company'
+      'logon'    => 'www.link.com',
+      'division' => 'My Brand',
+      'name'     => 'My Company'
     }
   end
 

@@ -7,7 +7,8 @@ describe "Fetching a set of reviews" do
 
   let(:feefo_review_fetcher) do
     config = {
-      account:               'www.sealinktravelgroup.com.au/SeaLink KI',
+      logon:                 'www.sealinktravelgroup.com.au',
+      division:              'SeaLink KI',
       time_to_cache_reviews: 25,
       review_limit:          9
     }
