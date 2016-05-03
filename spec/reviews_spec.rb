@@ -20,20 +20,36 @@ describe Feefo::Reviews do
 
   it 'should parse reviews' do
     expect(reviews.average).to eq 97
-    expect(reviews.count).to eq 284
+    expect(reviews.count).to eq 352
   end
+  let(:time_regex) { /[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}/ }
 
-  context 'reviews' do
+  context 'latest reviews' do
     subject(:review) { reviews.reviews.first }
     it 'should have the various aspects' do
       expect(review.customer_comment).to be_a(String)
       expect(review.vendor_comment).to be nil
       expect(review.description).to eq 'KI Experience'
-      expect(review.service_rating).to eq '+'
-      expect(review.review_date).to eq '2015-10-21T05:27:07'
-      expect(review.review_rating).to eq 4
+      expect(review.service_rating).to eq '++'
+      expect(review.review_date).to match time_regex
+      expect(review.review_rating).to eq 5
       expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
-      expect(review.date).to eq '21-Oct-2015'
+      expect(review.date).to eq '13 Hour(s) ago'
+      expect(review.data).to be_a(Hash)
+    end
+  end
+
+  context 'oldest reviews' do
+    subject(:review) { reviews.reviews.last }
+    it 'should have the various aspects' do
+      expect(review.customer_comment).to be_a(String)
+      expect(review.vendor_comment).to be nil
+      expect(review.description).to eq 'KI Experience'
+      expect(review.service_rating).to eq '++'
+      expect(review.review_date).to match time_regex
+      expect(review.review_rating).to eq 5
+      expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
+      expect(review.date).to eq '28-Apr-2016'
       expect(review.data).to be_a(Hash)
     end
   end
