@@ -1,2 +1,5 @@
 coverage
 Gemfile.lock
+
+vendor/ruby
+.bundle
