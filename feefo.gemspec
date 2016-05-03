@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["support@travellink.com.au"]
   spec.description   = %q{Methods to fetch and show feefo reviews}
   spec.summary       = %q{Methods to fetch and shwo feefo reviews}
-  spec.homepage      = 'http://github.com/sealink/feefo'
+  spec.homepage      = 'https://github.com/sealink/feefo'
 
   spec.license       = "MIT"
 

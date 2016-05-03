@@ -18,8 +18,10 @@ module Feefo
 
       uri       = URI(url)
       uri.query = URI.encode_www_form(params)
-
-      Net::HTTP.get(uri)
+      http = Net::HTTP.new(uri.host, uri.port)
+      http.use_ssl = uri.port == 443
+      response = http.get(uri.request_uri)
+      response.body
     end
 
 
@@ -30,7 +32,7 @@ module Feefo
     end
 
     def url
-      'http://www.feefo.com/feefo/xmlfeed.jsp'
+      'https://www.feefo.com/feefo/xmlfeed.jsp'
     end
   end
 end

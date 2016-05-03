@@ -23,7 +23,7 @@ module Feefo
     name = URI.encode(config.fetch(:name))
     logon = URI.encode(config.fetch(:logon))
     division = URI.encode(config.fetch(:division))
-    "http://www.feefo.com/reviews/#{name}/?logon=#{logon}/#{division}"
+    "https://www.feefo.com/reviews/#{name}/?logon=#{logon}/#{division}"
   end
 
   def self.review_for_code(code)

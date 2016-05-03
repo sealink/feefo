@@ -11,7 +11,7 @@ describe 'Feefo' do
   end
 
   it 'should determine url' do
-    expected_url = 'http://www.feefo.com/reviews/My%20Company/?logon=www.link.com/My%20Brand'
+    expected_url = 'https://www.feefo.com/reviews/My%20Company/?logon=www.link.com/My%20Brand'
     expect(Feefo.review_base_url).to eq expected_url
   end
 end
