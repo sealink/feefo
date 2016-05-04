@@ -25,7 +25,7 @@ module Feefo
     end
 
     def store_in_cache(reviews)
-      cache.write feefo_key(code), reviews, expires_in: feefo_config['time_to_cache_reviews']
+      cache.write feefo_key(filters), reviews, expires_in: feefo_config[:time_to_cache_reviews]
     end
 
     def feefo_key(filters)
