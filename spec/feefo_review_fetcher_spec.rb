@@ -12,7 +12,7 @@ describe "Fetching a set of reviews" do
       time_to_cache_reviews: 25,
       review_limit:          9
     }
-    Feefo::ReviewFetcher.new('HTCC', config, cache)
+    Feefo::ReviewFetcher.new({code: 'HTCC'}, config, cache)
   end
 
   subject(:reviews) do

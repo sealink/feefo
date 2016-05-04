@@ -9,7 +9,7 @@ describe Feefo::Reviews do
       time_to_cache_reviews: 25,
       review_limit:          9
     }
-    Feefo::ReviewFetcher.new('HTCC', config, cache)
+    Feefo::ReviewFetcher.new({code: 'HTCC'}, config, cache)
   end
   let(:data) do
     VCR.use_cassette('feefo_reviews_with_feedback') do
