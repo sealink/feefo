@@ -2,9 +2,10 @@ module Feefo
   class RemoteReviewFetcher
     attr_reader :code
 
-    def initialize(code, config)
-      @code   = code
-      @config = config
+    def initialize(filters, config)
+      @code     = filters[:code]
+      @category = filters[:category]
+      @config   = config
     end
 
     def fetch_reviews
@@ -14,13 +15,13 @@ module Feefo
         limit:     @config[:review_limit],
         json:      true,
         mode:      'both'   # Needed to get both product and service rating
-      }
+      }.reject { |k, v| v.nil? }
 
-      uri       = URI(url)
-      uri.query = URI.encode_www_form(params)
-      http = Net::HTTP.new(uri.host, uri.port)
+      uri          = URI(url)
+      uri.query    = URI.encode_www_form(params)
+      http         = Net::HTTP.new(uri.host, uri.port)
       http.use_ssl = uri.port == 443
-      response = http.get(uri.request_uri)
+      response     = http.get(uri.request_uri)
       response.body
     end
 
@@ -28,7 +29,10 @@ module Feefo
     private
 
     def logon
-      @config[:logon] + '/' + @config[:division]
+      logon = @config[:logon]
+      logon += '/' + @config[:division] if @config.key? :division
+      logon += '/' + @category if @category
+      logon
     end
 
     def url
