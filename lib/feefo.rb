@@ -32,8 +32,8 @@ module Feefo
     code           = filters[:code]
     category       = filters[:category]
     base_image_url = "https://www.feefo.com/feefo/feefologo.jsp?logon=#{logon}/#{division}"
-    category_part  = category ? category : ''
-    code_part      = code     ? code     : ''
+    category_part  = category ? "/#{category}"       : ''
+    code_part      = code     ? "&vendorref=#{code}" : ''
     image_template = "&template=product-stars-grey-150x38_en.png"
     return '' unless category || code
     base_image_url + category_part + code_part + image_template
@@ -49,7 +49,7 @@ module Feefo
 
   private
 
-  def configEncode(key)
+  def self.configEncode(key)
     URI.encode(config.fetch(key))
   end
 
