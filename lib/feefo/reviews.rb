@@ -4,7 +4,7 @@ module Feefo
 
     def initialize(data)
       list = data.fetch('FEEDBACKLIST')
-      @reviews = list.fetch('FEEDBACK').map { |review| Feefo::Review.new(review) }
+      @reviews = list.fetch('FEEDBACK', []).map { |review| Feefo::Review.new(review) }
       @summary = list.fetch('SUMMARY')
     end
 
