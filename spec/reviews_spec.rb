@@ -22,7 +22,9 @@ describe Feefo::Reviews do
     expect(reviews.average).to eq 97
     expect(reviews.count).to eq 352
   end
+  let(:hours_ago_regex) { /[0-9]{1,2} Hour\(s\) ago/ }
   let(:time_regex) { /[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}/ }
+  let(:date_regex) { /[0-9]{1,2}-[A-Z][a-z][a-z]-[0-9]{4}/ }
 
   context 'latest reviews' do
     subject(:review) { reviews.reviews.first }
@@ -34,7 +36,7 @@ describe Feefo::Reviews do
       expect(review.review_date).to match time_regex
       expect(review.review_rating).to eq 5
       expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
-      expect(review.date).to eq '13 Hour(s) ago'
+      expect(review.date).to match hours_ago_regex
       expect(review.data).to be_a(Hash)
     end
   end
@@ -49,7 +51,7 @@ describe Feefo::Reviews do
       expect(review.review_date).to match time_regex
       expect(review.review_rating).to eq 5
       expect(review.link).to eq 'http://www.sealink.com.au/kangaroo-island-tours/1-day-tours/kangaroo-island-highlights-day-tour/'
-      expect(review.date).to eq '28-Apr-2016'
+      expect(review.date).to match date_regex
       expect(review.data).to be_a(Hash)
     end
   end
