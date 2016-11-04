@@ -1,15 +1,9 @@
 language: ruby
 rvm:
-  - 1.9
-  - 2.0
-  - 2.1
-  - 2.2
   - 2.3.0
 script: "bundle exec rake"
 notifications:
   email:
     - support@travellink.com.au
-  flowdock:
-    secure: r0GLsWkguTObUNFRMl0wIW/ap6HRVCkeb2gFMPJhkQPYyx0bc5L3Utrm9cKN3WtJr1uaK/7iGK0H+bhAw4PSUjlF66dgOAlQBYiXiseIHqZTrjK97AtNUO8U4tuwvBQ878tBZQNn51mlCOQJUno0hbOCE6tYZYEU0Eicccx9nzzmU2Y1ORT93Q9CANyU5HDLEAllsuihQ5FGT+nnRKBfdumviHQG5OTnfUWlb+Q9HQz1m0VL3TPj6O0OAl0nODwu2tgBlknWOVIkIOS4wT2L8FY0zbb9XEkOUqJ25nwMB4t4tHE2SH4Q+pfQXXX9LeLk7M8tb4XZ0VHMWsBlaAp5L0mZ7dIlhVQF55CcUuR8YKeJ0zgW+AOB7fyvSKZfljqPt0TRxlPjxy2II2qkLKaI36msKKZuVPiBhzI1Idfuyzyls+R34VCVYiMd4kdxN4qW/MEFZUQn/+XFgAPxPKTNSqU43GnwkSlQMI0MdVRiCrX0i4jJ79JUacSKuf/neCR5C5B72eiJ9nGl7CX9Yj6aT36k/+OUMTVtUBcJpb0CJmWVwvY2uvJJQ2PzgsSMJ5ycDBSR4oWpLqeVGcDsHDRgjnB+G+PwQsEam22ibgp/u8r/nh6oI0GxicqxZ2broVxxwrfR7JJ6vzQghTxi4FwmNCagbKsNveyzX/I1vfCSip0=
 sudo: false
 cache: bundler
