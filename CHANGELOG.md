@@ -1,3 +1,7 @@
+# Unreleased #
+
+* Use coverage kit to enforce maximum coverage
+
 # 1.0.1 #
 
 * Updated params for feed to allow code and category
